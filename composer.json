@@ -1,0 +1,53 @@
+{
+    "name": "sturt/citationscraper",
+    "description": ":package_description",
+    "keywords": [
+        "laravel",
+        "sturt",
+        "citationscraper"
+    ],
+    "homepage": "https://github.com/sturt/citationscraper",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Edwin",
+            "email": "hello@edwinsturt.in",
+            "homepage": "https://edwinsturt.in",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : ">=5.5.0",
+        "illuminate/support": "~5.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sturt\\Citationscraper\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sturt\\Citationscraper\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sturt\\Citationscraper\\CitationServiceProvider"
+            ]
+        }
+    }
+}
